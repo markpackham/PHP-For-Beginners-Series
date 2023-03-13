@@ -22,6 +22,8 @@ class Database
         $dsn = 'mysql:' . http_build_query($config, '', ';');
 
         $this->connection = new PDO($dsn, $username, $password, [
+            // Scope Resolution Operator (::)  https://youtu.be/PDtBKgOJhGY?t=116
+            // https://www.php.net/manual/en/language.oop5.paamayim-nekudotayim.php
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]);
     }
