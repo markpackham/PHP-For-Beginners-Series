@@ -11,10 +11,13 @@ class Database
 
     public function __construct($config, $username = 'root', $password = '')
     {
+        // DSN means Data Source Name
+        // Generate URL-encoded query string
+        // https://www.php.net/manual/en/function.http-build-query.php
         $dsn = 'mysql:' . http_build_query($config, '', ';');
 
         $this->connection = new PDO($dsn, $username, $password, [
-           PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]);
     }
 
@@ -41,7 +44,7 @@ class Database
     {
         $result = $this->find();
 
-        if (! $result) {
+        if (!$result) {
             abort();
         }
 
