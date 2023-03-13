@@ -4,6 +4,8 @@ namespace Core;
 
 use PDO;
 
+// It's general practice if a PHP file only contains 1 class then the file itself should start
+// with a capital letter hence Database.php
 class Database
 {
     public $connection;
@@ -14,6 +16,9 @@ class Database
         // DSN means Data Source Name
         // Generate URL-encoded query string
         // https://www.php.net/manual/en/function.http-build-query.php
+
+        // essentially
+        // $dsn = "mysql:host=localhost;port=3306;dbname=myapp;user=root;charset=utf8mb4";
         $dsn = 'mysql:' . http_build_query($config, '', ';');
 
         $this->connection = new PDO($dsn, $username, $password, [
