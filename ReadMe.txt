@@ -10,3 +10,7 @@ php -S localhost:8999
 Demo Code taken from Epsiode 39
 https://github.com/laracasts/PHP-For-Beginners-Series
 https://www.youtube.com/watch?v=XouKZiWUtgk&list=PL3VM-unCzF8ipG50KDjnzhugceoSG3RTC&index=40
+
+Current position
+https://www.youtube.com/watch?v=N4PIFGviVJw&list=PL3VM-unCzF8ipG50KDjnzhugceoSG3RTC&index=23
+2:17
