@@ -1,7 +1,10 @@
 Start PHP local server
 https://www.php.net/manual/en/features.commandline.webserver.php
 
-php -S localhost:8000
+Go to the public folder
+/PHP-For-Beginners-Series/public
+then run
+php -S localhost:8999
 
 
 Demo Code taken from Epsiode 39
