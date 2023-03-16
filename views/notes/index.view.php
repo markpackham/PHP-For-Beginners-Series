@@ -1,4 +1,9 @@
-<?php require base_path('views/partials/head.php') ?>
+<?php require base_path('views/partials/head.php')
+?>
+<?php
+// using __DIR__ for a relative path would also work
+//require(__DIR__ . '/../partials/head.php') 
+?>
 <?php require base_path('views/partials/nav.php') ?>
 <?php require base_path('views/partials/banner.php') ?>
 
