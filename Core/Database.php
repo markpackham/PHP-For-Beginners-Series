@@ -2,6 +2,7 @@
 
 namespace Core;
 
+// Whilst PDO comes with PHP we have to use PDO otherwise the site will think the constant "PDO" belongs to the namespace "Core" above
 use PDO;
 
 // It's general practice if a PHP file only contains 1 class then the file itself should start
@@ -24,7 +25,10 @@ class Database
         $this->connection = new PDO($dsn, $username, $password, [
             // Scope Resolution Operator (::)  https://youtu.be/PDtBKgOJhGY?t=116
             // https://www.php.net/manual/en/language.oop5.paamayim-nekudotayim.php
+
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+            // if we didn't want to do "use PDO;" then this is possible
+            // \PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]);
     }
 
