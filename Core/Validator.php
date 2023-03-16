@@ -4,6 +4,8 @@ namespace Core;
 
 class Validator
 {
+    // INF is the infinite, a predefined constant from PHP
+    // https://www.php.net/manual/en/math.constants.php
     public static function string($value, $min = 1, $max = INF)
     {
         $value = trim($value);
