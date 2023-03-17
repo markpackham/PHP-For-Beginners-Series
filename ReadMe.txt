@@ -11,3 +11,9 @@ https://www.youtube.com/watch?v=XouKZiWUtgk&list=PL3VM-unCzF8ipG50KDjnzhugceoSG3
 
 Latest progress
 https://www.youtube.com/watch?v=qPBcMEpcNpE&list=PL3VM-unCzF8ipG50KDjnzhugceoSG3RTC&index=31
+
+
+Visual Studio supports PHP via PHP Tools
+https://marketplace.visualstudio.com/items?itemName=DEVSENSE.PHPToolsforVisualStudio2022
+Article on "PHP Tools" (free version might not be around forever)
+https://devblogs.microsoft.com/visualstudio/php-in-visual-studio/
