@@ -8,11 +8,13 @@ class Container
 {
     protected $bindings = [];
 
+    // add to the container
     public function bind($key, $resolver)
     {
         $this->bindings[$key] = $resolver;
     }
 
+    // remove (grab stuff out of the container)
     public function resolve($key)
     {
         if (!array_key_exists($key, $this->bindings)) {
