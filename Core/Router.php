@@ -19,6 +19,8 @@ class Router
             'middleware' => null
         ];
 
+        // In returning the instance we can later run the "only" method
+        // to do specific things to logged in and logged out users
         return $this;
     }
 
@@ -47,6 +49,8 @@ class Router
         return $this->add('PUT', $uri, $controller);
     }
 
+    // So "only" a guest or an authorized user can do something in a route
+    // an already logged in user shouldn't be allowed to register
     public function only($key)
     {
         $this->routes[array_key_last($this->routes)]['middleware'] = $key;
